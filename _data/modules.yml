@@ -1,0 +1,237 @@
+---
+- description: AIX SNMP Scanner Auxiliary Module
+  name: auxiliary/scanner/snmp/aix_version
+  published: 2009-07-28 04:48:36.000000000 Z
+  updated: 2017-07-24 13:26:21.000000000 Z
+  vulnerabilities: []
+- description: This module exploits a buffer overflow vulnerability in _tt_internal_realpath
+    function of the ToolTalk database server (rpc.ttdbserverd).
+  name: exploit/aix/rpc_ttdbserverd_realpath
+  published: 2009-06-23 03:49:25.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2009-2727
+- description: Connect back to attacker and spawn a command shell
+  name: payload/aix/ppc/shell_reverse_tcp
+  published: 2008-11-13 01:58:36.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Spawn a shell on an established connection
+  name: payload/aix/ppc/shell_find_port
+  published: 2008-11-13 01:58:36.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Listen for a connection and spawn a command shell
+  name: payload/aix/ppc/shell_bind_tcp
+  published: 2008-11-13 01:58:36.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Connect back to attacker and spawn a command shell
+  name: payload/linux/ppc64/shell_reverse_tcp
+  published: 2008-11-13 01:57:53.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Spawn a shell on an established connection
+  name: payload/linux/ppc64/shell_find_port
+  published: 2008-11-13 01:57:53.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Listen for a connection and spawn a command shell
+  name: payload/linux/ppc64/shell_bind_tcp
+  published: 2008-11-13 01:57:53.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Connect back to attacker and spawn a command shell
+  name: payload/linux/ppc/shell_reverse_tcp
+  published: 2008-11-13 01:57:53.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Spawn a shell on an established connection
+  name: payload/linux/ppc/shell_find_port
+  published: 2008-11-13 01:57:53.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Listen for a connection and spawn a command shell
+  name: payload/linux/ppc/shell_bind_tcp
+  published: 2008-11-13 01:57:53.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: This module triggers a heap overflow in the LSA RPC service of the
+    Samba daemon. This module uses the TALLOC chunk overwrite method (credit Ramon
+    and Adriano), which only works with Samba versions 3.0.21-3.0.24. Additionally,
+    this module will not work when the Samba "log level" parameter is higher than
+    "2".
+  name: exploit/linux/samba/lsa_transnames_heap
+  published: 2008-10-19 21:03:39.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-2446
+- description: Connect back to attacker and spawn a command shell
+  name: payload/linux/x86/shell_reverse_tcp
+  published: 2008-10-19 21:03:39.000000000 Z
+  updated: 2022-11-04 00:33:03.000000000 Z
+  vulnerabilities: []
+- description: Spawn a shell on an established connection
+  name: payload/linux/x86/shell_find_port
+  published: 2008-10-19 21:03:39.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: This module exploits a buffer overflow vulnerability in adm_build_path()
+    function of sadmind daemon. The distributed system administration daemon (sadmind)
+    is the daemon used by Solstice AdminSuite applications to perform distributed
+    system administration operations. The sadmind daemon is started automatically
+    by the inetd daemon whenever a request to invoke an operation is received. The
+    sadmind daemon process continues to run for 15 minutes after the last request
+    is completed, unless a different idle-time is specified with the -i command line
+    option. The sadmind daemon may be started independently from the command line,
+    for example, at system boot time. In this case, the -i option has no effect; sadmind
+    continues to run, even if there are no active requests.
+  name: exploit/solaris/sunrpc/sadmind_adm_build_path
+  published: 2008-10-14 14:22:34.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2008-4556
+- description: This module retrieves version of the services manager, version and
+    implementation of the InterBase server from InterBase Services Manager.
+  name: auxiliary/scanner/misc/ib_service_mgr_info
+  published: 2007-10-04 03:03:13.000000000 Z
+  updated: 2017-07-24 13:26:21.000000000 Z
+  vulnerabilities: []
+- description: This module exploits a stack buffer overflow in Borland InterBase by
+    sending a specially crafted service attach request.
+  name: exploit/windows/misc/ib_svc_attach
+  published: 2007-10-04 03:03:13.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-5243
+- description: This module exploits a stack buffer overflow in Borland InterBase by
+    sending a specially crafted create request.
+  name: exploit/windows/misc/ib_isc_create_database
+  published: 2007-10-04 03:03:13.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-5243
+- description: This module exploits a stack buffer overflow in Borland InterBase by
+    sending a specially crafted attach request.
+  name: exploit/windows/misc/ib_isc_attach_database
+  published: 2007-10-04 03:03:13.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-5243
+- description: This module exploits a stack buffer overflow in Borland InterBase by
+    sending a specially crafted service attach request.
+  name: exploit/windows/misc/fb_svc_attach
+  published: 2007-10-04 03:03:13.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-5243
+- description: This module exploits a stack buffer overflow in Borland InterBase by
+    sending a specially crafted create request.
+  name: exploit/windows/misc/fb_isc_create_database
+  published: 2007-10-04 03:03:13.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-5243
+- description: This module exploits a stack buffer overflow in Borland InterBase by
+    sending a specially crafted create request.
+  name: exploit/windows/misc/fb_isc_attach_database
+  published: 2007-10-04 03:03:13.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-5243
+- description: This module exploits a stack buffer overflow in Borland InterBase by
+    sending a specially crafted attach request.
+  name: exploit/linux/misc/ib_pwd_db_aliased
+  published: 2007-10-04 03:03:13.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-5243
+- description: This module exploits a stack buffer overflow in Borland InterBase by
+    sending a specially crafted attach request.
+  name: exploit/linux/misc/ib_open_marker_file
+  published: 2007-10-04 03:03:13.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-5244
+- description: This module exploits a stack buffer overflow in Borland InterBase by
+    sending a specially crafted create request.
+  name: exploit/linux/misc/ib_jrd8_create_database
+  published: 2007-10-04 03:03:13.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-5243
+- description: This module exploits a stack buffer overflow in Borland InterBase by
+    sending a specially crafted service attach request.
+  name: exploit/linux/misc/ib_inet_connect
+  published: 2007-10-04 03:03:13.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-5243
+- description: Listen for a connection and spawn a command shell
+  name: payload/linux/x86/shell_bind_tcp
+  published: 2007-07-31 02:10:49.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Connect back to attacker and spawn a command shell
+  name: payload/bsd/x86/shell_reverse_tcp
+  published: 2007-07-11 03:19:28.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Spawn a shell on an established connection
+  name: payload/bsd/x86/shell_find_port
+  published: 2007-07-11 03:19:28.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Listen for a connection and spawn a command shell
+  name: payload/bsd/x86/shell_bind_tcp
+  published: 2007-07-11 03:19:28.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: This module triggers a heap overflow in the LSA RPC service of the
+    Samba daemon. This module uses the TALLOC chunk overwrite method (credit Ramon
+    and Adriano), which only works with Samba versions 3.0.21-3.0.24. Additionally,
+    this module will not work when the Samba "log level" parameter is higher than
+    "2".
+  name: exploit/solaris/samba/lsa_transnames_heap
+  published: 2007-07-08 04:11:53.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-2446
+- description: Connect back to attacker and spawn a command shell
+  name: payload/solaris/x86/shell_reverse_tcp
+  published: 2007-07-08 04:11:53.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Spawn a shell on an established connection
+  name: payload/solaris/x86/shell_find_port
+  published: 2007-07-08 04:11:53.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Listen for a connection and spawn a command shell
+  name: payload/solaris/x86/shell_bind_tcp
+  published: 2007-07-08 04:11:53.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Connect back to attacker and spawn a command shell
+  name: payload/osx/x86/shell_reverse_tcp
+  published: 2007-07-05 02:02:39.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: Spawn a shell on an established connection
+  name: payload/osx/x86/shell_find_port
+  published: 2007-07-05 02:02:39.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
+- description: This module triggers a heap overflow in the LSA RPC service of the
+    Samba daemon. This module uses the szone_free() to overwrite the size() or free()
+    pointer in initial_malloc_zones structure.
+  name: exploit/osx/samba/lsa_transnames_heap
+  published: 2007-07-05 01:41:39.000000000 Z
+  updated: 2020-10-02 16:38:06.000000000 Z
+  vulnerabilities:
+  - CVE-2007-2446
+- description: Listen for a connection and spawn a command shell
+  name: payload/osx/x86/shell_bind_tcp
+  published: 2007-07-05 01:41:39.000000000 Z
+  updated: 2021-01-05 14:59:46.000000000 Z
+  vulnerabilities: []
